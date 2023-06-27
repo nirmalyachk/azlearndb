@@ -8,7 +8,7 @@ var config =
     user: process.env.DB_USER,
     password: "Nimda123#",
     port: 3306,
-    ssl: {ca: fs.readFileSync("C:/LCN/AZ/azlearndb/DigiCertGlobalRootCA.crt.pem")}
+    ssl: {ca: fs.readFileSync("./DigiCertGlobalRootCA.crt.pem")}
 };
 
 const conn = new mysql.createConnection(config);
